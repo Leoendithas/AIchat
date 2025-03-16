@@ -7,11 +7,17 @@ from datetime import datetime
 from docx import Document
 import io
 import streamlit.components.v1 as components  # For rendering custom HTML
+from streamlit_autorefresh import st_autorefresh
 
 #==================================================================================
 # Set your OpenAI API key.
 #==================================================================================
 client = OpenAI(api_key=st.secrets["api_keys"]["openai"])
+
+#==================================================================================
+# Auto-refresh every 3 seconds
+#==================================================================================
+st_autorefresh(interval=2000, key="chat_refresh")
 
 #==================================================================================
 # Database functions for shared persistent storage using SQLite.
