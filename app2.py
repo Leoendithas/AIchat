@@ -11,7 +11,7 @@ import streamlit.components.v1 as components  # For rendering custom HTML
 #==================================================================================
 # Set your OpenAI API key.
 #==================================================================================
-client = OpenAI(api_key=["openai"]["api_keys"])
+client = OpenAI(api_key=st.secrets["api_keys"]["openai"])
 
 #==================================================================================
 # Database functions for shared persistent storage using SQLite.
