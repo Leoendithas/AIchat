@@ -80,6 +80,8 @@ def get_active_members():
 #==================================================================================
 # Function to call GPT-4 API.
 #==================================================================================
+discussion_topic = "Should students wear school uniforms to school?"
+
 def get_gpt_response(conversation_history):
     openai_messages = []
     for msg in conversation_history:
@@ -90,7 +92,7 @@ def get_gpt_response(conversation_history):
     
     # Here we build a prompt (you can adjust as needed)
     active_members = str(len(get_active_members()))
-    discussion_topic = "Should students wear school uniforms to school?"
+
     
     chat_history = "\n".join([f"{msg['user']}: {msg['content']}" for msg in conversation_history])
     
@@ -182,7 +184,7 @@ st.title("Shared Multi-User Chat Demo")
 #==================================================================================
 # Chat Window (Scrollable with Auto-Scroll)
 #==================================================================================
-st.subheader("Conversation")
+st.subheader("Conversation:" + str(discussion_topic))
 
 # Inject CSS for styling the chat window.
 st.markdown(
