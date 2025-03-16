@@ -71,12 +71,11 @@ def clear_conversation():
     conn.close()
 
 def get_active_members():
-    """Extracts unique usernames from the messages.
-       (This simulates active members; for a true multi-user app,
-       you might need a dedicated mechanism to track live users.)"""
+    """Extracts unique usernames from the messages, excluding 'GPT4o'."""
     messages = get_all_messages()
-    active_users = {msg["user"] for msg in messages}
+    active_users = {msg["user"] for msg in messages if msg["user"].lower() != "gpt4o"}
     return active_users
+
 
 #==================================================================================
 # Function to call GPT-4 API.
