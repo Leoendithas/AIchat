@@ -184,7 +184,7 @@ st.title("Shared Multi-User Chat Demo")
 #==================================================================================
 # Chat Window (Scrollable with Auto-Scroll)
 #==================================================================================
-st.subheader("Conversation:" + str(discussion_topic))
+st.subheader(str(discussion_topic))
 
 # Inject CSS for styling the chat window.
 st.markdown(
