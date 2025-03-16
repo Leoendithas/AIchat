@@ -9,6 +9,8 @@ import io
 import streamlit.components.v1 as components  # For rendering custom HTML
 from streamlit_autorefresh import st_autorefresh
 
+st.set_page_config(initial_sidebar_state="collapsed")
+
 #==================================================================================
 # Set your OpenAI API key.
 #==================================================================================
