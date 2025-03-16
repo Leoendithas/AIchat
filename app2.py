@@ -82,7 +82,7 @@ def get_active_members():
 #==================================================================================
 # Function to call GPT-4 API.
 #==================================================================================
-discussion_topic = "Should students wear school uniforms to school?"
+discussion_topic = "Should there be aircon in school classrooms? Why or why not?"
 
 def get_gpt_response(conversation_history):
     openai_messages = []
