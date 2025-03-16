@@ -182,6 +182,13 @@ init_db()
 st.title("Shared Multi-User Chat Demo")
 
 #==================================================================================
+# Front-End Toggle: Enable/Disable API Call after every 5 messages
+#==================================================================================
+# This toggle appears in the sidebar.
+enable_api_call = st.sidebar.checkbox("Enable AI", value=True)
+
+
+#==================================================================================
 # Chat Window (Scrollable with Auto-Scroll)
 #==================================================================================
 st.subheader(str(discussion_topic))
@@ -247,10 +254,10 @@ if st.session_state["username"]:
         user_message = message_input.strip()
         if user_message:
             insert_message(st.session_state["username"], user_message)
-            # After insertion, check user message count and trigger GPT response every 15 messages.
+            # After insertion, check user message count and (if toggle enabled) trigger GPT response every 5 user messages.
             user_count = get_user_message_count()
             last_msg = get_last_message()
-            if user_count % 5 == 0 and last_msg["user"] != "GPT4o":
+            if enable_api_call and (user_count % 5 == 0) and last_msg["user"] != "GPT4o":
                 with st.spinner("Calling GPT-4..."):
                     conversation = [dict(row) for row in get_all_messages()]
                     gpt_reply = get_gpt_response(conversation)
