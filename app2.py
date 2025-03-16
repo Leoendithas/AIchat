@@ -187,7 +187,7 @@ st.title("Shared Multi-User Chat Demo")
 # Front-End Toggle: Enable/Disable API Call after every 5 messages
 #==================================================================================
 # This toggle appears in the sidebar.
-enable_api_call = st.sidebar.checkbox("Enable AI", value=False)
+enable_api_call = st.sidebar.checkbox("Enable AI", value=True)
 
 
 #==================================================================================
