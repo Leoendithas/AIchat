@@ -106,9 +106,15 @@ based on the criteria provided below.
 The discussion topic is {discussion_topic} and there are {active_members} active members in the Chat room.
 
 # Completion Steps #
-1. Analyse the chat history.
+1. Analyse the chat history and identify key themes.
 2. Based on the chat history, determine which criteria would be the most suitable response to guide the discussion.
-3. Generate ONE question or statement based on the criteria provided in XML tags, and state the criterion you used in your decision making at the back of the sentence.
+3. Generate a two sentence response:
+Sentence 1: Provide the key themes of student's responses thus far.
+Sentence 2: Provide guidance by asking a question based on one of the 6 criteria below.
+
+Sample response:
+Students, I’ve noticed some interesting ideas coming up. For instance, some of you mentioned that uniforms might help create a more unified school look, while others pointed out concerns about expressing your personal style. 
+Can you share some specific ways you think wearing uniforms could affect our daily school life? Please give examples of both positive effects—like feeling more focused or united—and any challenges you foresee. I'd love to hear from everyone!
 
 Only Output Step 3 in your response.
 
