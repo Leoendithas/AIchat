@@ -188,7 +188,7 @@ def export_to_word(messages):
 #==================================================================================
 init_db()
 
-st.title("Shared Multi-User Chat Demo")
+st.title("LEA Teams User Research")
 
 #==================================================================================
 # Front-End Toggle: Enable/Disable API Call after every 5 messages
