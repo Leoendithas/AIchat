@@ -82,7 +82,8 @@ def get_active_members():
 #==================================================================================
 # Function to call GPT-4 API.
 #==================================================================================
-discussion_topic = """Should there be aircon in school classrooms? Discuss in your group and come up with 3 reasons to support your group's stand."""
+discussion_topic = """Should there be aircon in school classrooms? 
+Discuss in your group and come up with 3 reasons to support your group's stand."""
 
 def get_gpt_response(conversation_history):
     openai_messages = []
