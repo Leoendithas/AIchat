@@ -3,8 +3,11 @@
 A lightweight **Streamlit** chat room with **shared persistence (SQLite)** and an optional **AI facilitator** powered by the OpenAI API.  
 Designed for classroom-style group discussions (ages ~12–15), with auto-refresh, active member tracking, and one-click export to Word.
 
+<img width="792" height="870" alt="image" src="https://github.com/user-attachments/assets/f9c5a506-71a3-4241-be6e-a8bca7d2ebaf" />
+
+
 This is an exploratory prototype used for user testing with real students to evaluate the usefulness of AI facilitators in human, text-based group discussions.  
-Predecessor to **Lumina**: https://github.com/adoreblvnk/lumina/tree/main/app
+Predecessor to **Lumina**, an AI voice-facilitator for group discussions: https://github.com/adoreblvnk/lumina/tree/main/app
 
 ---
 
