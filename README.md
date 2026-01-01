@@ -1,4 +1,3 @@
-````md
 # AIchat
 
 A lightweight **Streamlit** chat room with **shared persistence (SQLite)** and an optional **AI facilitator** powered by the OpenAI API.  
