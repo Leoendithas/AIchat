@@ -1,3 +1,4 @@
 openai
 python-docx
+streamlit
 streamlit_autorefresh
